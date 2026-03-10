@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Progetto — Le Piazze Siciliane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progetto.css">
+</head>
+<body>
+    <header>
+        <p>Le Piazze Siciliane</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="piazze.html">Piazze</a></li>
+                <li><a href="progetto.html">Progetto</a></li>
+            </ul>
+            <button class="hamburger" onclick="this.parentElement.classList.toggle('aperto')">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="progetto-hero">
+            <div class="progetto-hero-sinistra">
+                <span class="progetto-etichetta">Il Progetto</span>
+                <h1>Un archivio delle piazze siciliane</h1>
+            </div>
+            <div class="progetto-hero-destra">
+                <p>Un sito informativo sulle piazze dei capoluoghi di provincia siciliani. Non una guida turistica, ma uno strumento per raccogliere, organizzare e rendere consultabili le informazioni su una selezione di spazi urbani rappresentativi.</p>
+            </div>
+        </section>
+        <div class="progetto-corpo">
+            <div class="colonna-sinistra">
+                <div class="blocco">
+                    <p class="blocco-titolo">Tema</p>
+                    <h2>Di cosa si occupa questo sito</h2>
+                    <p>Il progetto raccoglie e organizza informazioni sulle piazze urbane dei capoluoghi di provincia della Sicilia. Ogni piazza è trattata come un elemento informativo autonomo: non un'attrazione da visitare, ma uno spazio da conoscere nel suo contesto cittadino, con una funzione, una storia e un ruolo preciso nella vita della città.</p>
+                </div>
+                <div class="blocco">
+                    <p class="blocco-titolo">Ambito</p>
+                    <h2>Cosa non rientra nel progetto</h2>
+                    <p>Il progetto ha confini definiti. Non sono incluse le piazze di comuni non capoluogo, più piazze della stessa città, spazi urbani non classificati formalmente come piazze. Non vengono prodotte descrizioni di carattere turistico né itinerari di visita.</p>
+                </div>
+            </div>
+            <div class="colonna-destra">
+                <div class="blocco-criteri">
+                    <p class="blocco-titolo">Criteri di selezione</p>
+                    <h2>Come viene scelta la piazza</h2>
+                    <ul class="lista-criteri">
+                        <li>
+                            <span class="criterio-num">01</span>
+                            <span>Deve essere uno spazio centrale per la città e facilmente riconoscibile dalla cittadinanza.</span>
+                        </li>
+                        <li>
+                            <span class="criterio-num">02</span>
+                            <span>Deve rappresentare la città, anche se non necessariamente la piazza più famosa o visitata.</span>
+                        </li>
+                        <li>
+                            <span class="criterio-num">03</span>
+                            <span>Deve svolgere un ruolo concreto e attivo nella vita urbana quotidiana.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © 2026 — Tutti i diritti riservati
+    </footer>
+</body>
+</html>

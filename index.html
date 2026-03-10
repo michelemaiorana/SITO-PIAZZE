@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Sito Piazze</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p>Le Piazze Siciliane</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="piazze.html">Piazze</a></li>
+                <li><a href="progetto.html">Progetto</a></li>
+            </ul>
+            <button class="hamburger" onclick="this.parentElement.classList.toggle('aperto')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-img">
+                <span>Immagine principale</span>
+            </div>
+        </section>
+        <div class="banner-piazze">
+            <h2>LE PIAZZE</h2>
+            <p>Una raccolta delle piazze principali dei capoluoghi di provincia siciliani, selezionate per il loro ruolo nella vita urbana e nella storia della città.</p>
+        </div>
+        <section class="sezione-piazze">
+            <div class="griglia">
+                <div class="card-piazza">
+                    <a href="piazza-duomo-sr.html" class="card-link">
+                    <div class="immagine-piazza">
+                        <img src="IMG/piazza-duomo-siracusa.jpg" alt="Piazza Duomo, Siracusa">
+                    </div>
+                    <div class="card-info">
+                        <h3>Piazza Duomo</h3>
+                        <span class="localita">Siracusa</span>
+                    </div>
+                    </a>
+                </div>
+                <div class="card-piazza">
+                    <a href="piazza-duomo-ct.html" class="card-link">
+                    <div class="immagine-piazza">
+                        <img src="IMG/piazza-duomo-catania.jpg" alt="Piazza Duomo, Catania">
+                    </div>
+                    <div class="card-info">
+                        <h3>Piazza Duomo</h3>
+                        <span class="localita">Catania</span>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a href="piazze.html" class="btn-vedi-tutte">Vedi tutte</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2026 — Tutti i diritti riservati
+    </footer>
+</body>
+</html>

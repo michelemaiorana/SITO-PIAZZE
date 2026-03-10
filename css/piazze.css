@@ -1,0 +1,129 @@
+.hero-diviso {
+    display: flex;
+    height: 480px;
+}
+
+.hero-diviso-img {
+    width: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.hero-diviso-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-diviso-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grigio-chiaro);
+}
+
+.hero-diviso-testo {
+    width: 50%;
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--bianco);
+}
+
+.hero-diviso-testo h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--nero);
+    line-height: 1.2;
+}
+
+.hero-diviso-testo p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--grigio);
+    font-weight: 300;
+}
+
+.banner-sezione {
+    width: 100%;
+    background-color: var(--nero);
+    padding: 28px 48px;
+}
+
+.banner-sezione h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    font-weight: 900;
+    color: var(--verde);
+    letter-spacing: 0.08em;
+}
+
+.sezione-testo {
+    padding: 48px;
+    background-color: var(--bianco);
+}
+
+.testo-contenuto {
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.testo-contenuto p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--nero);
+    font-weight: 300;
+}
+
+.griglia-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+    max-width: 1200px !important;
+}
+
+@media (max-width: 960px) {
+    .griglia-3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-diviso {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-diviso-img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .hero-diviso-testo {
+        width: 100%;
+        padding: 32px 20px;
+    }
+
+    .hero-diviso-testo h1 {
+        font-size: 24px;
+    }
+
+    .banner-sezione {
+        padding: 22px 20px;
+    }
+
+    .banner-sezione h2 {
+        font-size: 25px;
+    }
+
+    .sezione-testo {
+        padding: 32px 20px;
+    }
+
+    .griglia-3 {
+        grid-template-columns: 1fr !important;
+    }
+}

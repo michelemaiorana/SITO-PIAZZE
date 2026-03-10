@@ -1,0 +1,368 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+:root {
+    --nero: #2C3E2D;
+    --bianco: #FAFCF9;
+    --verde: #4A7C59;
+    --grigio: #718096;
+    --grigio-chiaro: #C8DAC4;
+}
+
+body {
+    background-color: var(--bianco);
+    font-family: "Montserrat", sans-serif;
+    color: var(--nero);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 72px;
+    background-color: var(--nero);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--bianco);
+    letter-spacing: 0.8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--bianco);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+nav ul li a:hover {
+    color: var(--verde);
+    border-bottom-color: var(--verde);
+}
+
+.hamburger {
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: rgba(200,169,110,0.4);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.banner-piazze {
+    width: 100%;
+    background-color: var(--nero);
+    padding: 36px 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.banner-piazze h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--verde);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.banner-piazze p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(245,240,235,0.7);
+    font-weight: 300;
+    border-left: 2px solid var(--verde);
+    padding-left: 24px;
+}
+
+.sezione-piazze {
+    padding: 64px 48px;
+}
+
+.griglia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.card-piazza {
+    background-color: #fff;
+    border: 1px solid var(--grigio-chiaro);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-piazza:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.card-piazza .immagine-piazza {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.card-piazza .immagine-piazza img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card-piazza:hover .immagine-piazza img {
+    transform: scale(1.05);
+}
+
+.img-piazza {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-piazza span {
+    font-size: 48px;
+    opacity: 0.3;
+}
+
+.card-info {
+    padding: 20px 24px 24px;
+    border-top: 3px solid var(--verde);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-info h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--nero);
+    margin-bottom: 4px;
+}
+
+.card-info .localita {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--grigio);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-vedi-tutte {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--nero);
+    border: 2px solid var(--nero);
+    border-radius: 100px;
+    padding: 14px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.btn-vedi-tutte:hover {
+    background-color: var(--nero);
+    color: var(--bianco);
+}
+
+footer {
+    background-color: var(--nero);
+    color: rgba(245,240,235,0.55);
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    justify-content: space-between;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+
+header {
+    animation: fadeUp 0.4s ease-out both;
+}
+
+.hero,
+.hero-diviso {
+    animation: fadeUp 0.5s ease-out 0.05s both;
+}
+
+.banner-piazze,
+.intro {
+    animation: fadeUp 0.5s ease-out 0.1s both;
+}
+
+.sezione-piazze,
+.sezioni,
+.sezione-testo,
+.suggerite {
+    animation: fadeUp 0.5s ease-out 0.15s both;
+}
+
+footer {
+    animation: fadeUp 0.5s ease-out 0.2s both;
+}
+
+@media (max-width: 640px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 4px;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: var(--bianco);
+        transition: all 0.3s;
+    }
+
+    nav.aperto ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background-color: var(--nero);
+        padding: 8px 0;
+    }
+
+    nav.aperto ul li a {
+        display: block;
+        padding: 14px 20px;
+    }
+
+    header { 
+        padding: 0 20px; 
+    }
+
+    .banner-piazze {
+        flex-direction: column;
+        padding: 28px 20px;
+    }
+
+    .banner-piazze h2 {
+        font-size: 32px;
+    }
+
+    .banner-piazze p {
+        border-left: none;
+        padding-left: 0;
+        border-top: 2px solid var(--verde);
+        padding-top: 16px;
+        text-align: center;
+    }
+
+    .sezione-piazze {
+        padding: 40px 20px;
+    }
+
+    .griglia {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    footer { 
+        flex-direction: column; 
+        gap: 20px; 
+        text-align: center; 
+        padding: 32px 20px; 
+    }
+}
+
