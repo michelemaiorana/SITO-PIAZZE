@@ -36,7 +36,7 @@
     font-family: "Playfair Display", serif;
     font-size: 32px;
     font-weight: 700;
-    color: var(--nero);
+    color: var(--verde-scuro);
     line-height: 1.2;
 }
 
@@ -49,7 +49,7 @@
 
 .banner-sezione {
     width: 100%;
-    background-color: var(--nero);
+    background-color: var(--verde-scuro);
     padding: 28px 48px;
 }
 
@@ -76,7 +76,7 @@
 .testo-contenuto p {
     font-size: 15px;
     line-height: 1.8;
-    color: var(--nero);
+    color: var(--verde-scuro);
     font-weight: 300;
 }
 

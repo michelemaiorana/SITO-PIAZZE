@@ -24,9 +24,10 @@
 }
 
 :root {
-    --nero: #2C3E2D;
-    --bianco: #FAFCF9;
+    --verde-scuro: #2C3E2D;
+    --bianco: #F5F0E8;
     --verde: #4A7C59;
+    --oro: #C8A96E;
     --grigio: #718096;
     --grigio-chiaro: #C8DAC4;
 }
@@ -34,7 +35,7 @@
 body {
     background-color: var(--bianco);
     font-family: "Montserrat", sans-serif;
-    color: var(--nero);
+    color: var(--verde-scuro);
 }
 
 header {
@@ -43,7 +44,7 @@ header {
     justify-content: space-between;
     padding: 0 48px;
     height: 72px;
-    background-color: var(--nero);
+    background-color: var(--verde-scuro);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -117,7 +118,7 @@ nav ul li a:hover {
 
 .banner-piazze {
     width: 100%;
-    background-color: var(--nero);
+    background-color: var(--verde-scuro);
     padding: 36px 48px;
     display: flex;
     align-items: center;
@@ -128,7 +129,7 @@ nav ul li a:hover {
     font-family: "Playfair Display", serif;
     font-size: 45px;
     font-weight: 700;
-    color: var(--verde);
+    color: var(--oro);
     letter-spacing: 1px;
     white-space: nowrap;
     flex-shrink: 0;
@@ -214,7 +215,7 @@ nav ul li a:hover {
     font-family: "Playfair Display", serif;
     font-size: 20px;
     font-weight: 600;
-    color: var(--nero);
+    color: var(--verde-scuro);
     margin-bottom: 4px;
 }
 
@@ -235,8 +236,8 @@ nav ul li a:hover {
 .btn-vedi-tutte {
     display: inline-block;
     text-decoration: none;
-    color: var(--nero);
-    border: 2px solid var(--nero);
+    color: var(--verde-scuro);
+    border: 2px solid var(--verde-scuro);
     border-radius: 100px;
     padding: 14px 40px;
     font-size: 14px;
@@ -247,12 +248,12 @@ nav ul li a:hover {
 }
 
 .btn-vedi-tutte:hover {
-    background-color: var(--nero);
+    background-color: var(--verde-scuro);
     color: var(--bianco);
 }
 
 footer {
-    background-color: var(--nero);
+    background-color: var(--verde-scuro);
     color: rgba(245,240,235,0.55);
     padding: 40px 48px;
     display: flex;
@@ -319,7 +320,7 @@ footer {
         top: 72px;
         left: 0;
         width: 100%;
-        background-color: var(--nero);
+        background-color: var(--verde-scuro);
         padding: 8px 0;
     }
 
