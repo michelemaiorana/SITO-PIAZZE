@@ -7,6 +7,10 @@
     --grigio-chiaro: #C8DAC4;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--bianco);
     font-family: "Montserrat", sans-serif;

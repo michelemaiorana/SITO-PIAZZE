@@ -17,6 +17,10 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --verde-scuro: #2C3E2D;
     --bianco: #F5F0E8;
