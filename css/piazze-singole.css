@@ -207,16 +207,16 @@ nav ul li a:hover {
 .sezioni {
     padding: 20px 64px;
     display: flex;
-    flex-direction: column;
-    gap: 0;
+    flex-direction: row;
+    gap: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .sezione {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 48px;
-    padding: 56px 0;
-    border-bottom: 1px solid var(--grigio-chiaro);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
 }
 
 .sezione:last-child {
@@ -226,7 +226,6 @@ nav ul li a:hover {
 .sezione-intestazione {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding-top: 6px;
 }
 
@@ -235,7 +234,7 @@ nav ul li a:hover {
     font-size: 80px;
     font-weight: 900;
     line-height: 1;
-    color: var(--grigio-chiaro);
+    color: var(--verde);
     letter-spacing: -2px;
 }
 
@@ -243,7 +242,7 @@ nav ul li a:hover {
     font-family: "Playfair Display", serif;
     font-size: 24px;
     font-weight: 700;
-    color: var(--verde-scuro);
+    color: var(--verde);
     line-height: 1.2;
 }
 
@@ -257,7 +256,8 @@ nav ul li a:hover {
     font-size: 15px;
     line-height: 1.9;
     color: #3a4a3b;
-    font-weight: 300;
+    font-weight: 500;
+    max-width: 65ch;
 }
 
 .pull-quote {

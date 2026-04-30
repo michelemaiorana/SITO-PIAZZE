@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: var(--verde-scuro);
+}
+
 :root {
     --verde-scuro: #2C3E2D;
     --bianco: #F5F0E8;
@@ -35,6 +39,11 @@ body {
     font-family: "Montserrat", sans-serif;
     color: var(--verde-scuro);
     margin: 0 !important;
+}
+
+.sezione-piazze {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 header {
@@ -78,6 +87,11 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--verde);
     border-bottom-color: var(--verde);
+}
+
+nav ul li a.attiva {
+    color: var(--bianco);
+    border-bottom-color: var(--bianco);
 }
 
 .hamburger {
@@ -138,7 +152,7 @@ nav ul li a:hover {
     font-size: 15px;
     line-height: 1.7;
     color: rgba(245,240,235,0.7);
-    font-weight: 300;
+    font-weight: 500;
     border-left: 2px solid var(--verde);
     padding-left: 24px;
 }
