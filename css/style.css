@@ -30,6 +30,7 @@ body {
     background-color: var(--bianco);
     font-family: "Montserrat", sans-serif;
     color: var(--verde-scuro);
+    margin: 0 !important;
 }
 
 header {
